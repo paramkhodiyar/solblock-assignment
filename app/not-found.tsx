@@ -7,7 +7,6 @@ export default function NotFound() {
     <div className="min-h-screen bg-[#0b0f19] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden font-sans">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0b0f19] via-[#101726] to-[#0b0f19]" />
-        {/* Animated decorative shapes */}
         <div className="absolute top-[20%] left-[20%] w-64 h-64 bg-brand-orange/5 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-[20%] right-[20%] w-80 h-80 bg-orange-400/5 rounded-full blur-3xl animate-[pulse-glow_5s_ease-in-out_infinite]" />
       </div>

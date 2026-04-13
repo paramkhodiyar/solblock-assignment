@@ -17,7 +17,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen relative overflow-hidden font-sans">
-      {/* Background Image Setup */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/bg.png"
@@ -26,18 +25,15 @@ export default function Home() {
           priority
           className="object-cover opacity-60"
         />
-        {/* Gradient overlay to ensure text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#0b0f19]/80 via-[#0b0f19]/40 to-[#0b0f19]" />
       </div>
 
-      {/* Navigation Header */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#0b0f19]/90 backdrop-blur-md shadow-lg" : "bg-transparent"
           }`}
       >
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-1.5 cursor-pointer group">
-            {/* High-res precision geometric SVG logo */}
             <svg viewBox="0 0 40 40" className="w-[38px] h-[38px] md:w-[42px] md:h-[42px] transition-transform duration-300 group-hover:scale-105" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M 30 7 A 15 15 0 1 0 30 33" stroke="#F97316" strokeWidth="8" strokeLinecap="butt" className="drop-shadow-sm" />
               <rect x="15" y="16" width="16" height="8" rx="1.5" fill="#F97316" className="drop-shadow-sm" />
@@ -62,7 +58,6 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Mobile Hamburger Icon */}
           <button
             className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 focus:outline-none z-50 group"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -74,7 +69,6 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
       <div className={`fixed inset-0 bg-[#0b0f19] z-40 transition-transform duration-500 ease-in-out transform ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden flex flex-col items-center justify-center space-y-8`}>
         <a href="#" className="text-2xl font-bold text-gray-300 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>Properties</a>
@@ -88,10 +82,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="relative z-10 pt-32 pb-20 flex flex-col items-center text-center px-4 w-full h-full max-w-7xl mx-auto">
 
-        {/* Title Section */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 drop-shadow-xl max-w-4xl mx-auto leading-tight">
           Discover <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-brand-orange font-black">high-growth</span><br className="hidden md:block" /> property investments
         </h1>
@@ -108,20 +100,16 @@ export default function Home() {
           </span>
         </button>
 
-        {/* Central Graphic Section */}
         <div className="relative w-full max-w-5xl rounded-3xl glass-panel flex flex-col md:flex-row items-center justify-between shadow-2xl p-6 md:p-10 transition-transform duration-500 hover:scale-[1.01] bg-[#111827]/40 ring-1 ring-white/10 group backdrop-blur-xl mt-12">
 
           <div className="relative w-full md:w-[55%] h-64 md:h-[350px] rounded-2xl overflow-hidden mb-12 md:mb-0 shadow-inner group-hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] transition-all duration-500 z-10">
-            {/* Base frame image */}
             <Image src="/frame-1.png" alt="Property overlay" fill className="absolute inset-0 object-cover object-center scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out" priority />
 
-            {/* Hovering Jigsaw */}
             <div className="absolute left-[30%] top-[40%] w-24 h-24 md:w-32 md:h-32 transform -translate-y-1/2 drop-shadow-2xl animate-float group-hover:rotate-6 transition-transform duration-700">
               <Image src="/jigsaw.png" alt="puzzle piece" fill className="object-contain" />
             </div>
           </div>
 
-          {/* Sweeping Progressive Animated Arrow */}
           <div className="absolute top-[48%] md:top-[47%] left-[55%] md:left-[55%] transform -translate-x-1/2 -translate-y-[50%] flex items-center justify-center z-30 pointer-events-none opacity-90 transition-transform duration-700">
             <style>{`
               @keyframes slideFadeFlow {
@@ -163,7 +151,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Bottom Sequence Section */}
         <div className="w-full max-w-5xl mx-auto mt-12 bg-gradient-to-r from-[#111828]/80 to-[#1e293b]/80 backdrop-blur-xl rounded-3xl p-6 md:p-8 border border-white/5 shadow-2xl relative overflow-hidden group">
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-orange/5 via-transparent to-transparent pointer-events-none"></div>
 
@@ -185,7 +172,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Scrollable Container */}
           <div className="relative">
             <div className="flex overflow-x-auto gap-4 md:gap-5 pb-6 pt-2 snap-x snap-mandatory hide-scrollbar group/scroll">
               {[
@@ -214,8 +200,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-
-            {/* Scroll Indication Fade */}
             <div className="absolute right-0 top-0 w-16 h-full bg-gradient-to-l from-[#111828] to-transparent pointer-events-none md:hidden"></div>
           </div>
         </div>
