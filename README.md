@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fractional Property Ownership UI - C-Stake
 
-## Getting Started
+Welcome to the frontend repository for the **C-Stake Property Investment Platform**, developed as part of an frontend assignment.
 
-First, run the development server:
+## 👨‍💻 Introduction
+Hi, I'm **Param Khodiyar**. I built this high-fidelity landing page to demonstrate a commanding grasp of modern frontend engineering, strict adherence to UI/UX design mockups, and an overarching focus on a distinctly premium and professional aesthetic. 
+
+My goal with this repository was to seamlessly execute a pristine layout while bringing the interface to life through meticulous, highly creative macro/micro-animations that strike exact balances between engaging flow and severe professionalism.
+
+## ✨ Frontend Features & Architecture
+
+This project is built using bleeding-edge stack implementations: **Next.js 15+ (App Router)** & **Tailwind CSS v4**. 
+
+### 1. Mathematical Geometric Brand Rendering
+Instead of relying on lossy PNG/JPEG images for the header UI lockup which could pixelate across high-resolution retina screens, the "C-Stake" brand logo was algorithmically reconstructed utilizing native React SVGs and exact mathematical arcs. This guarantees infinite, razor-sharp scalability on all devices.
+
+### 2. High-Performance Fluid Animations
+Creativity was expressed specifically through the feeling of "fluidity/aliveness" rather than flashy or amateur noise:
+- **Progressive Flow Arrows**: Engineered a 3-stage animated SVG chevron sequencer mapping via pure CSS keyframes (`slideFadeFlow`).
+- **Glassmorphism Dynamics**: Jigsaw blocks actively render with slow independent Y-axis translation offsets to enforce a deeply 3D space effect.
+- **Micro-interactions**: Components seamlessly respond to hover/engagement mapping via transition-delays mapped exactly across Tailwind properties while completely isolating noisy elements.
+
+### 3. Responsive Mobile Mapping
+- Fully implemented cross-browser fluid layout boundaries relying exclusively on structurally secure `flex` configurations.
+- The platform breaks down mathematically across `md:` and `lg:` Tailwind viewports.
+- Integrated an entirely custom, smooth-sliding mobile Hamburger navigation overlay. The menu handles touch interactions transparently mapping clean geometric transitions (sandwich-to-X line rotations) without clipping or relying on third-party modal libraries.
+
+### 4. Custom 404 Routing Infrastructure
+Instead of leaving invalid edge-case routes to the Next.js generic gray fallback, I built a dedicated `app/not-found.tsx` handler mapping perfectly onto the brand's aesthetic, ensuring users are carefully and elegantly guided back into the primary onboarding funnel if they get lost.
+
+## 🚀 Running Locally
+
+Ensure you have Node.js installed, then execute:
 
 ```bash
+# Install required dependencies
+npm install
+
+# Start the Turbopack development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The server will initialize instantly at `http://localhost:3000`.
